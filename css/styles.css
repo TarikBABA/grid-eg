@@ -1,0 +1,100 @@
+/*  */
+
+/* 
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&display=swap');
+
+/*
+==========
+Variables
+==========
+*/
+:root {
+  --primaryColor: #f15025;
+  --mainBlack: #222;
+  --mainWhite: #fff;
+  --offWhite: #f7f7f7;
+  --darkGrey: #afafaf;
+  --mainTransition: all 0.3s linear;
+  --mainSpacing: 0.2rem;
+}
+
+/*
+==========
+Global Styles
+==========
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Fira Code", monospace;
+  color: var(--mainBlack);
+  background: var(--mainWhite);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3 {
+  text-transform: capitalize;
+  letter-spacing: var(--mainSpacing);
+  margin-bottom: 1.25rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  margin-bottom: 0;
+}
+
+p {
+  font-weight: 300;
+  font-size: 0.7rem;
+  line-height: 2;
+}
+*/
+
+/*  */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: tomato;
+  font-size: 1.5rem;
+}
+.container {
+  /* min-width: 800px; */
+  background-color: teal;
+  border: solid red 1.3px;
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  grid-auto-rows: 80px;
+  place-items: center;
+  place-content: center;
+  row-gap: 2rem;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    grid-template-columns: 100px;
+    grid-template-rows: repeat(4, 40px);
+  }
+}
